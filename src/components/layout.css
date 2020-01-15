@@ -1,3 +1,4 @@
+/* GLOBAL CSS */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,6 +8,17 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* CUSTOME FONT: SIGNIST 02 */
+@font-face {
+  font-family: 'Signist 02 DEMO';
+  src: url('../../static/fonts/Signist02DEMO.woff2') format('woff2'),
+      url('../../static/fonts/Signist02DEMO.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+.signist {
+  font-family: 'Signist 02 DEMO';
 }
 article,
 aside,

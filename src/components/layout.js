@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,6 +22,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  console.log('from the layout component');
+  console.log('location: ', location);
+  
 
   return (
     <>
