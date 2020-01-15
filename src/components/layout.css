@@ -63,6 +63,16 @@ a:hover {
   color: #E0AD02;
   outline-width: 0;
 }
+footer a {
+  color: black;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+footer a:active,
+footer a:hover {
+  color: #50C878; /* change this to an Aïssatou approved dark green */
+  outline-width: 0;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

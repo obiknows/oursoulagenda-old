@@ -30,19 +30,20 @@ const Layout = ({ children}) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
+          minHeight: `100vh`,
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: `2.22rem`,
         }}
       >
-        <main>{children}</main>
-        <footer style={{color: 'white'}}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <main style={{minHeight: `100vh`}}>{children}</main>
       </div>
+      <footer style={{backgroundColor: '#FEC502',}}>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
     </>
   )
 }
