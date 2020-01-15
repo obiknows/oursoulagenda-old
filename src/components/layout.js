@@ -39,10 +39,22 @@ const Layout = ({ children}) => {
       >
         <main style={{minHeight: `100vh`}}>{children}</main>
       </div>
-      <footer style={{backgroundColor: '#FEC502',}}>
-        © {new Date().getFullYear()}, Built with
+      <footer style={{textAlign: 'center', backgroundColor: '#FEC502', paddingTop: `1rem`, paddingBottom: `1rem`,}}>
+        <>
+        © {new Date().getFullYear()}, Built by  
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://instagram.com/itsobinna">Obinna</a> &
+        {` `}
+        <a href="https://imewe.xyz">IMEWE Inc.</a>
+        , All Rights Reserved
+        </>
+        <div>
+          <a href="https://imewe.xyz">About</a>
+          {` `}
+          <a href="https://imewe.xyz">Terms of Use</a>
+          {` `}
+          <a href="https://imewe.xyz">Privacy</a>
+        </div>
       </footer>
     </>
   )
