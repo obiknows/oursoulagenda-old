@@ -6,14 +6,16 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout style={{marginTop: `2.22rem`}}>
     <SEO title="Home" />
-    <h1 className="signist">OUR SOUL AGENDA</h1>
-    <p>What's good people, here are some words about us.</p>
-    <p>What's good people, here are some words about what we do.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    {/* SOUL GLOBE */}
+    <div style={{ maxWidth: `122px`, textAlign: 'center',  marginBottom: `0.22rem`, margin: `0 auto`, }}>
+      <Image style={{textAlign: 'center'}} />
     </div>
+    {/* OUR SOUL AGENDA FONT */}
+    <h1 className="signist" style={{fontSize: 88, textAlign: 'center', color: 'white', letterSpacing: 2.2}}>OUR SOUL AGENDA</h1>
+    <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about us.</h3>
+    <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about what we do.</h3>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
