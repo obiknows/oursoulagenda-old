@@ -5,6 +5,9 @@ module.exports = {
     author: `@itsobinna`,
   },
   plugins: [
+    // Transformer Sharp
+    `gatsby-transformer-sharp`,
+    // React Helmet
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,7 +16,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
+    // Sharp Plugin
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -27,6 +30,16 @@ module.exports = {
         icon: `src/images/our-soul-favicon.png`, // This path is relative to the root of the site.
       },
     },
+    // Youtube Gatsby Plugin
+    // {
+    //   resolve: `gatsby-source-youtube`,
+    //   options: {
+    //     channelId: "UC14DDaQZouxfsTxHhXxF0sg", // https://www.youtube.com/channel/UC14DDaQZouxfsTxHhXxF0sg
+    //     apiKey: process.env.YOUTUBE_API_KEY,
+    //     maxVideos: 10, // Defaults to 50
+    //   },
+    // },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

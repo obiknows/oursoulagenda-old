@@ -14,8 +14,8 @@ body {
 /* CUSTOME FONT: SIGNIST 02 */
 @font-face {
   font-family: 'Signist 02 DEMO';
-  src: url('../../static/fonts/Signist02DEMO.woff2') format('woff2'),
-      url('../../static/fonts/Signist02DEMO.woff') format('woff');
+  src: url('../../src/fonts/Signist02DEMO.woff2') format('woff2'),
+      url('../../src/fonts/Signist02DEMO.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
