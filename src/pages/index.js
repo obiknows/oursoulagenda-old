@@ -19,20 +19,26 @@ const IndexPage = () => (
       <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about us.</h3>
       <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about what we do.</h3>
       <div style={{paddingLeft: `3rem`, paddingRight: `3rem`, display:'flex', justifyContent: 'space-around', }}>
-        <Link to="/page-2/" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+        <Link to="/about" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
           <h5>About</h5>
         </Link>
-        <Link to="/page-2/" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>About</h5>
+        <Link to="/support-us" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+          <h5>Support Us</h5>
+        </Link>
+        <Link to="/videos" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+          <h5>Videos</h5>
         </Link>
         <a href="https://oursoulagenda.bigcartel.com" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
           <h5>Store</h5>
         </a>
-        <Link to="/page-2/" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>About</h5>
+        <Link to="/our-faves" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+          <h5>Our Faves</h5>
         </Link>
-        <Link to="/page-2/" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>About</h5>
+        <Link to="/services" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+          <h5>Services</h5>
+        </Link>
+        <Link to="/contact" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
+          <h5>Contact</h5>
         </Link>
       </div>
     </div>

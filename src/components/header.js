@@ -19,9 +19,9 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <div style={{margin: `0 auto`, textAlign: 'center'}}>
-        <img style={{marginBottom: 0}} src={soulglobe} height="30px" alt="Logo" />
+        <img style={{marginBottom: 0}} src={soulglobe} height="17px" alt="Logo" />
       </div>
-      <h1 class="signist" style={{ margin: 0, textAlign: 'center', lineHeight: `inherit`}}>
+      <h4 class="signist" style={{ margin: 0, textAlign: 'center', /*lineHeight: `inherit`,*/ lineHeight: `13px`}}>
         <Link
           to="/"
           style={{
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h4>
     </div>
   </header>
 )
