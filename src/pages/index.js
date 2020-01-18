@@ -96,13 +96,11 @@ const SoulLinkSet = styled.div`
   justify-content: space-around;
   grid-template-columns: auto auto auto auto auto auto auto; 
 
-  // for medium sized screens decrease the font size
+  // for medium sized screens break to vertical
   @media screen and (max-width: 768px) {
     text-align: center;
     grid-template-columns: auto;
   }
-  // for tablet screens and smaller, break to vertical
-
 `
 
 
