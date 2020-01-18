@@ -19,17 +19,20 @@ const IndexPage = () => (
       <SoulGlobeText style={{textAlign: 'center'}} />
     </SoulAgendaHeader>
     {/* CONTENT */}
-    <div style={{paddingLeft:`2rem`, paddingRight:`2rem`, display: 'flex', flexDirection: 'column',}}>
-      
+    <SoulAgendaHomeContent>
       {/* ABOUT US/ PURPOSE INTRO */}
-      <h3 style={{textAlign: 'center', color: 'white'}}>
-        What's good Soul Fam, we're Aïssatou and Obinna. <br/>
-        We're here to help you create and get to your soul's purpose in this life.
-      </h3>
-      <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about what we do.</h3>
+      <>
+        <SoulHeaderText>
+          What's good Soul Fam, we're Aïssatou and Obinna. <br/>
+          We're here to help you create and get to your soul's purpose in this life.
+        </SoulHeaderText>
+        <SoulHeaderText>
+          What's good people, here are some words about what we do.
+        </SoulHeaderText>
+      </>
       
       {/* LINKS */}
-      <div style={{paddingLeft: `3rem`, paddingRight: `3rem`, display:'grid', justifyContent: 'space-around', gridTemplateColumns: `auto auto auto auto auto auto auto`, }}>
+      <SoulLinkSet>
         <Link to="/about" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
           <h5>About</h5>
         </Link>
@@ -51,13 +54,19 @@ const IndexPage = () => (
         <Link to="/contact" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
           <h5>Contact</h5>
         </Link>
-      </div>
-
-    </div>
+      </SoulLinkSet>
+    </SoulAgendaHomeContent>
   </Layout>
 )
 
 // STYLED COMPONENTS
+const SoulAgendaHomeContent = styled.div`
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+`
+
 const SoulGlobe = styled.div`
   max-width: 122px;
   text-align: 'center';
@@ -69,12 +78,32 @@ const SoulAgendaHeader = styled.div`
   max-width: 80vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  margin-left: auto;
-  margin-right: auto;
-  // text-align: 'center';
+  text-align: center;
   color: 'white';
   letter-spacing: 2.2;
   word-spacing: 0rem;
 `
+
+const SoulHeaderText = styled.h3`
+  color: white;
+  text-align: center;
+`
+
+const SoulLinkSet = styled.div`
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto auto auto auto auto; 
+
+  // for medium sized screens decrease the font size
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    grid-template-columns: auto;
+  }
+  // for tablet screens and smaller, break to vertical
+
+`
+
 
 export default IndexPage
