@@ -1,19 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import SoulGlobeImg from "../components/soulglobeimg"
+import SoulGlobeText from "../components/soulglobetext"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout style={{marginTop: `2.22rem`}}>
     <SEO title="Home" />
     {/* SOUL GLOBE */}
-    <div style={{ maxWidth: `122px`, textAlign: 'center',  marginBottom: `0.22rem`, margin: `0 auto`, }}>
-      <Image style={{textAlign: 'center'}} />
-    </div>
+    <SoulGlobe>
+      <SoulGlobeImg style={{textAlign: 'center'}} />
+    </SoulGlobe>
     {/* OUR SOUL AGENDA HEADER */}
-    <h1 className="signist" style={{fontSize: 88, textAlign: 'center', color: 'white', letterSpacing: 2.2, wordSpacing: `0rem`}}>OUR SOUL AGENDA</h1>
+    <SoulAgendaHeader>
+      <SoulGlobeText style={{textAlign: 'center'}} />
+    </SoulAgendaHeader>
     {/* CONTENT */}
     <div style={{paddingLeft:`2rem`, paddingRight:`2rem`, display: 'flex', flexDirection: 'column',}}>
       
@@ -25,7 +29,7 @@ const IndexPage = () => (
       <h3 style={{textAlign: 'center', color: 'white'}}>What's good people, here are some words about what we do.</h3>
       
       {/* LINKS */}
-      <div style={{paddingLeft: `3rem`, paddingRight: `3rem`, display:'flex', justifyContent: 'space-around', }}>
+      <div style={{paddingLeft: `3rem`, paddingRight: `3rem`, display:'grid', justifyContent: 'space-around', gridTemplateColumns: `auto auto auto auto auto auto auto`, }}>
         <Link to="/about" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
           <h5>About</h5>
         </Link>
@@ -48,9 +52,29 @@ const IndexPage = () => (
           <h5>Contact</h5>
         </Link>
       </div>
-      
+
     </div>
   </Layout>
 )
+
+// STYLED COMPONENTS
+const SoulGlobe = styled.div`
+  max-width: 122px;
+  text-align: 'center';
+  margin-bottom: 0.22rem;
+  margin: 0 auto;
+`
+
+const SoulAgendaHeader = styled.div`
+  max-width: 80vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  // text-align: 'center';
+  color: 'white';
+  letter-spacing: 2.2;
+  word-spacing: 0rem;
+`
 
 export default IndexPage

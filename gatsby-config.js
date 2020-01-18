@@ -5,6 +5,8 @@ module.exports = {
     author: `@itsobinna`,
   },
   plugins: [
+    // Styled Components
+    `gatsby-plugin-styled-components`,
     // Transformer Sharp
     `gatsby-transformer-sharp`,
     // React Helmet
