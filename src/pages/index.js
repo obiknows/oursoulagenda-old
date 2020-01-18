@@ -78,7 +78,8 @@ const SoulAgendaHeader = styled.div`
   max-width: 80vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: 'white';
   letter-spacing: 2.2;
   word-spacing: 0rem;
