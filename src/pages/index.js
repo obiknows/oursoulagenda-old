@@ -7,6 +7,8 @@ import SoulGlobeImg from "../components/soulglobeimg"
 import SoulGlobeText from "../components/soulglobetext"
 import SEO from "../components/seo"
 
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 const IndexPage = () => (
   <Layout style={{marginTop: `2.22rem`}}>
     <SEO title="Home" />
@@ -23,7 +25,7 @@ const IndexPage = () => (
       {/* ABOUT US/ PURPOSE INTRO */}
       <>
         <SoulHeaderText>
-          What's good Soul Fam, we're Aïssatou and Obinna. <br/>
+          What's good Soul Squad, we're Aïssatou and Obinna. <br/>
           We're here to help you create and get to your soul's purpose in this life.
         </SoulHeaderText>
         <SoulHeaderText>
@@ -33,31 +35,39 @@ const IndexPage = () => (
       
       {/* LINKS */}
       <SoulLinkSet>
-        <Link to="/about" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>About</h5>
+        <Link to="/about" style={LinkStyle}>
+          <SoulLinkText>About</SoulLinkText>
         </Link>
-        <Link to="/support-us" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Support Us</h5>
+        <Link to="/support-us" style={LinkStyle}>
+          <SoulLinkText>Support Us</SoulLinkText>
         </Link>
-        <Link to="/videos" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Videos</h5>
+        <Link to="/videos" style={LinkStyle}>
+          <SoulLinkText>Videos</SoulLinkText>
         </Link>
-        <a href="https://oursoulagenda.bigcartel.com" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Store</h5>
-        </a>
-        <Link to="/our-faves" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Our Faves</h5>
+        <OutboundLink href="https://oursoulagenda.bigcartel.com" style={LinkStyle}>
+          <SoulLinkText>Store</SoulLinkText>
+        </OutboundLink>
+        <Link to="/our-faves" style={LinkStyle}>
+          <SoulLinkText>Our Faves</SoulLinkText>
         </Link>
-        <Link to="/services" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Services</h5>
+        <Link to="/services" style={LinkStyle}>
+          <SoulLinkText>Services</SoulLinkText>
         </Link>
-        <Link to="/contact" style={{textDecoration: 'none', textTransform: 'uppercase'}}>
-          <h5>Contact</h5>
+        <Link to="/contact" style={LinkStyle}>
+          <SoulLinkText>Contact</SoulLinkText>
         </Link>
       </SoulLinkSet>
     </SoulAgendaHomeContent>
+
+    {/* SOULCIAL MEDIA ICONSSET */}
+
   </Layout>
 )
+
+const LinkStyle = {
+  textDecoration: 'none',
+  textTransform: 'uppercase'
+}
 
 // STYLED COMPONENTS
 const SoulAgendaHomeContent = styled.div`
@@ -103,6 +113,14 @@ const SoulLinkSet = styled.div`
     grid-template-columns: auto;
   }
 `
+
+const SoulLinkText = styled.h5`
+`
+
+// const SoulcialMediaIconsContainer = styled.div`
+// `
+
+// const SoulcialMediaIcon = styled.div``
 
 
 export default IndexPage

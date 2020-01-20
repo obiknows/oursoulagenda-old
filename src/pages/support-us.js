@@ -6,14 +6,18 @@ import SEO from "../components/seo"
 
 const SupportUs = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Support Us" />
     <div style={{color:'white'}}>
-      <h1 class="signist" style={{fontSize:88}}>Support Us</h1>
+      <h1 style={{fontSize:88, textAlign: 'center', letterSpacing: `0.22rem`, textTransform: 'uppercase'}}>Support Us</h1>
       <h4>Love what we do?</h4>
       <h4>Learned from our videos?</h4>
       <h4>Got a lil' extra on the tax returns?</h4>
       <h4>If we've ever done anything for you or you just felt like supporting us feel free to do it below</h4>
-      <h4>Love and Light Soul Fam</h4>
+      <h4>Love and Light Soul Squad</h4>
+      {/* Shop and support */}
+      
+      {/* Remind people that if they click the links from our Amazon, w/in 24 Hours, we still get our cut. */}
+
 
       {/* Links to PayPal / Patreon */}
       <div>

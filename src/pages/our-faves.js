@@ -6,10 +6,12 @@ import SEO from "../components/seo"
 
 const OurFaves = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Our Faves" />
+    <div style={{color:'white'}}>
+      <h1 style={{textAlign: 'center', fontSize: 88, letterSpacing: `0.22rem`, textTransform: 'uppercase'}}>Our Faves</h1>
+      <h3>Here's a few of our favorite things that we use in van life and in real life.</h3>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 

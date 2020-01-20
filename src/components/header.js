@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
       <div style={{margin: `0 auto`, textAlign: 'center'}}>
         <img style={{marginBottom: 0}} src={soulglobe} height="17px" alt="Logo" />
       </div>
-      <h4 class="signist" style={{ margin: 0, textAlign: 'center', /*lineHeight: `inherit`,*/ lineHeight: `13px`}}>
+      <h4 className="signist" style={{ margin: 0, textAlign: 'center', /*lineHeight: `inherit`,*/ lineHeight: `13px`}}>
         <Link
           to="/"
           style={{

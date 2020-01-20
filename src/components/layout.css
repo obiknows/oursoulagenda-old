@@ -71,7 +71,7 @@ footer a {
 }
 footer a:active,
 footer a:hover {
-  color: #50C878; /* change this to an Aïssatou approved dark green */
+  color: darkgreen; /* change this to an Aïssatou approved dark green */
   outline-width: 0;
 }
 abbr[title] {
@@ -257,8 +257,9 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Lalezar', cursive;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -646,4 +647,51 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+.tabbed {
+  width: 700px;
+  /* margin: 120px auto; */
+}
+
+.tabbed > input {
+ display: none;
+}
+
+.tabbed label {
+  display: block;
+  float: left;
+  padding: 15px 20px;
+  font-size: 22px;
+  transition: background-color .4s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+  /* background: black;
+  color: white; */
+  background: white;
+  color: black;
+}
+
+.tabs {
+  clear: both;
+  position: relative;
+  border-top: 2px solid black;
+}
+
+.tabs > div {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+  transform: translateY(6px);
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-child(1),
+#tab-nav-2:checked ~ .tabs > div:nth-child(2),
+#tab-nav-3:checked ~ .tabs > div:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all .3s linear .1s;
 }
