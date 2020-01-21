@@ -95,7 +95,7 @@ const SupportUs = () => (
           <h2>YouTube</h2>
           <h4>Support us by subscribing to our channel and watching our videos!</h4>
           {/* YouTube Button */}
-          <div style={{ marginTop:50, textAlign: 'center', padding: `10px`, marginLeft: `auto`, marginRight: `auto`, backgroundColor: "#FEC502", width:'min-content', textAlign: "center", }}>
+          <div style={{ marginTop:50, textAlign: 'center', padding: `10px`, marginLeft: `auto`, marginRight: `auto`, backgroundColor: "#FEC502", width:'min-content' }}>
             <div className="g-ytsubscribe" data-channelid="UC14DDaQZouxfsTxHhXxF0sg" data-layout="full" data-count="default"></div>
           </div>
         </div>
