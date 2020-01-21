@@ -23,15 +23,15 @@ const IndexPage = () => (
     {/* CONTENT */}
     <SoulAgendaHomeContent>
       {/* ABOUT US/ PURPOSE INTRO */}
-      <>
+      <div style={{marginTop: 40, marginBottom: 20,}}>
         <SoulHeaderText>
-          What's good Soul Squad, we're Aïssatou and Obinna. <br/>
-          We're here to help you create and get to your soul's purpose in this life.
+          What's good Soul Squad, we're Aïssatou and Obinna!<br/>
+          Here to help you share your soul’s purpose with the world.
         </SoulHeaderText>
         <SoulHeaderText>
-          What's good people, here are some words about what we do.
+          We use design and tech to help you connect with your audience and build your unique brand.
         </SoulHeaderText>
-      </>
+      </div>
       
       {/* LINKS */}
       <SoulLinkSet>
