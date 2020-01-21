@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import BackHomeButton from "../components/backhomebutton"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -20,6 +21,12 @@ const SupportUs = () => (
 
 
       {/* Links to PayPal / Patreon */}
+      <div style={{marginTop: 50, textAlign:'center'}}>
+        <Link to="/" style={{color: 'white', backgroundColor: '#3b7bbf', padding: 10, /*fontFamily: 'Lalezar',*/ fontWeight: 700, textDecoration: 'none'}}>
+          Donate with PayPal
+        </Link>
+      </div>
+
       <div>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_donations" />
@@ -31,8 +38,8 @@ const SupportUs = () => (
       </div>
 
 
-      {/* Return to Homepage */}
-      <Link to="/">Return to the homepage</Link>
+      {/* Go Home Button */}
+      <BackHomeButton/>
     </div>
   </Layout>
 )

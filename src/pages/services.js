@@ -1,7 +1,9 @@
 /* eslint-disable import/first */
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
+
+import BackHomeButton from "../components/backhomebutton"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -16,11 +18,42 @@ const Services = () => (
 
       {/* SERVICE TAB LIST */}
       <>
+        <ServiceListContainer>
+          <ServiceListItem></ServiceListItem>
+          <ServiceListItem></ServiceListItem>
+          <ServiceListItem></ServiceListItem>
+          <ServiceListItem></ServiceListItem>
+          <ServiceListItem></ServiceListItem>
+          <ServiceListItem></ServiceListItem>
+        </ServiceListContainer>
       </>
       {/* SERVICE TAB LIST  -- END*/}
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    {/* Go Home Button */}
+    <BackHomeButton/>
   </Layout>
 )
+
+const ServiceListContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
+
+const ServiceListItem = styled.div`
+  background-color: gold;
+  width: 100%;
+  height: 100px;
+`
 
 export default Services

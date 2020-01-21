@@ -1,8 +1,9 @@
 import React from "react"
 import Helmet from "react-helmet"
 import styled from "styled-components"
-import { Link, useStaticQuery, graphql, withPrefix } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
+import BackHomeButton from "../components/backhomebutton"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -70,7 +71,8 @@ const Videos = () => {
         </div>
 
         {/* Go Home Button */}
-        <Link to="/">Go back to the homepage</Link>
+        <BackHomeButton/>
+
       </div>
     </Layout>
   )
