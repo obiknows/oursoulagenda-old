@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
 import BackHomeButton from "../components/backhomebutton"
+import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -56,7 +57,7 @@ const Videos = () => {
         <script src={withPrefix("yt-platform.js")} />
       </Helmet>
       <div style={{ color: "white" }}>
-        <h1 style={{ fontSize: 88, textAlign: "center", letterSpacing: `0.22rem`, textTransform: 'uppercase' }}>Videos</h1>
+        <TitleHeader title="Videos" />
         <h3>Check some of most recent flicks.</h3>
         <h3>Oh yeah and don't forget to <span style={{color:'#FEC502'}}>subscribe below</span> if you ain't already</h3>
         <h3>Thanks SOUL Sqaud</h3>

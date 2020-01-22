@@ -4,6 +4,7 @@ import { withPrefix } from "gatsby"
 
 
 import BackHomeButton from "../components/backhomebutton"
+import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -15,7 +16,7 @@ const SupportUs = () => (
     </Helmet>
     <div style={{color:'white', lineHeight: `1.44rem`}}>
       {/* TITLE */}
-      <h1 style={{fontSize:88, textAlign: 'center', letterSpacing: `0.22rem`, textTransform: 'uppercase'}}>Support Us</h1>
+      <TitleHeader title="Support Us" />
       {/* INTRO */}
       <div style={{textAlign: 'center'}}>
         <h3>Love watchin our journey?</h3>

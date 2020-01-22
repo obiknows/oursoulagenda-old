@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import BackHomeButton from "../components/backhomebutton"
+import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -83,7 +84,7 @@ const OurFaves = () => {
     <Layout>
       <SEO title="Our Faves" />
       <div style={{color:'white'}}>
-        <h1 style={{textAlign: 'center', fontSize: 88, letterSpacing: `0.22rem`, textTransform: 'uppercase'}}>Our Faves</h1>
+        <TitleHeader title="Our Faves" />
         <h3>Here's a few of our favorite things that we use in van life and in real life.</h3>
 
         {/* SERVICE TAB LIST */}

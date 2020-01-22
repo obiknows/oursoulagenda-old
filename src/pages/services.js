@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 import BackHomeButton from "../components/backhomebutton"
+import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -43,7 +44,7 @@ const Services = () => {
     <Layout>
       <SEO title="Services" />
       <div style={{color:'white'}}>
-        <h1 style={{ fontSize: 88, textAlign: "center", letterSpacing: `0.22rem`, textTransform: 'uppercase'}}>Services</h1>
+        <TitleHeader title="Services" />
         <h3>Hey we do stuff. We could do some stuff for y'all.</h3>
         <h3>Check out these services below.</h3>
         {/* SERVICE TAB LIST */}
