@@ -24,7 +24,7 @@ import AlmondOilPhoto from '../images/our-faves/almond-oil.jpg'
 import CashAppPhoto from '../images/our-faves/cash-app.png'
 import NikonCameraPhoto from '../images/our-faves/nikon-d3500.png'
 
-// Format the Data so the Videos are viewable
+// Data list for our favorite items
 var favItems = [
   // DJI OSMO Pocket
   {imgSrc: DJICameraPhoto, link:"https://amzn.to/36gMe29", title: 'DJI OSMO Pocket', subtitle: `Our main video camera. Shoots 4K. Doesn't face-track melanin as well as advertised`},
