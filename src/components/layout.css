@@ -297,7 +297,8 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
+  /* line-height: 1.1; */
+  line-height: 1.55;
 }
 h4 {
   margin-left: 0;
