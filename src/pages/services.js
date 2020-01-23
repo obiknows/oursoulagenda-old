@@ -66,13 +66,13 @@ const Services = () => {
             </div>
           </div>
           {/* DESCRIPTION */}
-          <div style={{}}>
+          <ServiceListItemDescription style={{}}>
             <ServiceListItemHeader>{svc.name}</ServiceListItemHeader>
             <h4>{svc.desc}</h4>
             <PriceContainer>
               <ServiceListItemPrice>{svc.price}</ServiceListItemPrice>
             </PriceContainer>
-          </div>
+          </ServiceListItemDescription>
         </ServiceListItem>
       )
     }
@@ -91,15 +91,8 @@ const Services = () => {
         <>
           <ServiceListContainer>
             {ourServicesList}
-            {/* <ServiceListItem></ServiceListItem>
-            <ServiceListItem></ServiceListItem>
-            <ServiceListItem></ServiceListItem>
-            <ServiceListItem></ServiceListItem>
-            <ServiceListItem></ServiceListItem>
-            <ServiceListItem></ServiceListItem> */}
           </ServiceListContainer>
         </>
-        {/* SERVICE TAB LIST  -- END*/}
       </div>
       {/* Go Home Button */}
       <BackHomeButton/>
@@ -148,6 +141,16 @@ const ServiceListItem = styled.div`
   }
 `
 
+const ServiceListItemDescription = styled.div`
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    margin-top: 5%;
+  }
+  
+  @media screen and (max-width: 500px) {
+    margin-top: 5%;
+  }
+`
+
 const ServiceListItemInverted = styled.div`
   // background-color: gold;
   text-align: center;
@@ -171,10 +174,12 @@ const ServiceListItemInverted = styled.div`
 
 const ServiceListItemInvertedDescription = styled.div`
   @media screen and (max-width: 768px) and (min-width: 500px) {
+    margin-top: 5%;
     order: 2;
   }
   
   @media screen and (max-width: 500px) {
+    margin-top: 5%;
     order: 2;
   }
 `
