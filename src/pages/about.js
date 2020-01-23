@@ -17,8 +17,8 @@ const About = () => (
       </h3>
       <h3>
         3000 miles later, after graduation we moved to Oakland where we lived and worked for
-        non-profits and tech. But we quickly we realized that high-paying salaries was not the end
-        all be all for us and we decided to make a change
+        non-profits and in tech. But we quickly we realized that high-paying salaries was not the end
+        all be all and we decided to escape the matrix and make a change
       </h3>
       <h3>
         After planning for a few months, in June 2019 we bought & renovated our 70s Camper Van, Soula,
@@ -27,7 +27,7 @@ const About = () => (
       </h3>
       <h3>
         These days, we share our knowledge, expertise and lessons from our unique life in order to empower
-        others with valuable info & items that can help them to prosper on their journey.
+        others with valuable information that they can apply to help them to prosper on their journey.
       </h3>
       <h3>
         All of our work is motivated by our mission to build community with our people and create generational

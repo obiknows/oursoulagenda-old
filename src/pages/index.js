@@ -34,7 +34,7 @@ const IndexPage = () => (
           Here to help you share your soul’s purpose with the world.
         </SoulHeaderText>
         <SoulHeaderText>
-          We use design and tech to help you connect with your audience and build your unique brand.
+          We use our skillset in design, technology, health and more to help you connect with your audience and build your unique brand.
         </SoulHeaderText>
       </div>
       

@@ -28,39 +28,39 @@ import NikonCameraPhoto from '../images/our-faves/nikon-d3500.png'
 // Data list for our favorite items
 var favItems = [
   // DJI OSMO Pocket
-  {imgSrc: DJICameraPhoto, link:"https://amzn.to/36gMe29", title: 'DJI OSMO Pocket', subtitle: `Our main video camera. Shoots 4K. Doesn't face-track melanin as well as advertised`},
+  {imgSrc: DJICameraPhoto, link:"https://amzn.to/36gMe29", title: 'DJI OSMO Pocket', subtitle: `Our main video camera. Shoots 4K and fits in your pocket.`},
   // GoPro 3-Way Grip
-  {imgSrc: GoPro3WayPhoto, link: "https://amzn.to/2GaCAU3", title: 'GoPro 3-Way Grip', subtitle: `What we use to stabilize our camera for that lit lit footage`},
+  {imgSrc: GoPro3WayPhoto, link: "https://amzn.to/2GaCAU3", title: 'GoPro 3-Way Grip', subtitle: `What we use to stabilize our camera for that lit lit footage.`},
   // Adobe Suite
-  {imgSrc: AdobeSuitePhoto, link: "#", title: 'Adobe Suite', subtitle: `Software we use for video editing, photo editing, and all them lit graphic designs`},
+  {imgSrc: AdobeSuitePhoto, link: "#", title: 'Adobe Suite', subtitle: `Software we use for video editing, photo editing, and graphic designs.`},
   // Audio-Technica ATH-M50x
-  {imgSrc: AudioTechnicaPhoto, link: "https://amzn.to/3ay5yLK", title: 'Audio-Technica ATH-M50x', subtitle: `Our favorite headphones, our current pair has lasted 4+ years`},
+  {imgSrc: AudioTechnicaPhoto, link: "https://amzn.to/3ay5yLK", title: 'Audio-Technica ATH-M50x', subtitle: `Our favorite headphones, our current pair has lasted 4+ years.`},
   // Goal Zero Yeti 1000
-  {imgSrc: GoalZeroPhoto, link: "https://amzn.to/38wkIPR", title: 'Goal Zero Yeti 1000', subtitle: `How we power our electronics off grid and the easiest way to install solar in your van`},
+  {imgSrc: GoalZeroPhoto, link: "https://amzn.to/38wkIPR", title: 'Goal Zero Yeti 1000', subtitle: `How we power our electronics off grid and the easiest way to install solar in your van.`},
   // Renogy 100W Solar Panel
-  {imgSrc: SolarPanelPhoto, link: "https://amzn.to/2Rfywsg", title: 'Renogy 100W Solar Panel', subtitle: `We’ve got two of these strapped to our roof, so we really off-grid`},
+  {imgSrc: SolarPanelPhoto, link: "https://amzn.to/2Rfywsg", title: 'Renogy 100W Solar Panel', subtitle: `We’ve got two of these strapped to our roof, so we can really off-grid.`},
   // Harman Kardon Bluetooth Speaker
-  {imgSrc: HarmanKardonPhoto, link: "https://amzn.to/37jwyfK", title: 'Harman Kardon Bluetooth Speaker', subtitle: `How we jam out in the van. Gotta have that boomin soundsystem`},
+  {imgSrc: HarmanKardonPhoto, link: "https://amzn.to/37jwyfK", title: 'Harman Kardon Bluetooth Speaker', subtitle: `How we jam out in the van. Gotta have that boomin' soundsystem.`},
   // Pioneer DDJ-SB3
-  {imgSrc: PioneerDJPhoto, link: "https://amzn.to/2TL4SfO", title: 'Pioneer DDJ-SB3', subtitle: `Aïssatou’s trusted DJ controller. For the ill mixes`},
+  {imgSrc: PioneerDJPhoto, link: "https://amzn.to/2TL4SfO", title: 'Pioneer DDJ-SB3', subtitle: `Aïssatou’s trusted DJ controller. For the ill mixes.`},
   // Coleman Camper Stove
-  {imgSrc: CamperStovePhoto, link: "https://amzn.to/3aquMvv", title: 'Coleman Camper Stove', subtitle: `How we cook all of our delicious meals. Where we be fixin up that flame`},
+  {imgSrc: CamperStovePhoto, link: "https://amzn.to/3aquMvv", title: 'Coleman Camper Stove', subtitle: `How we cook all of our delicious & flame meals.`},
   // Bamboo Toothbrushes
-  {imgSrc: ToothbrushPhoto, link: "https://amzn.to/2G9ZcUC", title: 'Bamboo Toothbrushes', subtitle: `Our favorite eco-friendly toothbrushes. Gotta keep the grill shinin.`},
+  {imgSrc: ToothbrushPhoto, link: "https://amzn.to/2G9ZcUC", title: 'Bamboo Toothbrushes', subtitle: `Our favorite eco-friendly toothbrushes. Gotta keep the grill shinin'.`},
   // Organic Toothpaste Powder
-  {imgSrc: ToothpastePhoto, link: "https://amzn.to/2Rh0P9m", title: 'Organic Toothpaste Powder', subtitle: `All natural, fluoride-free toothpaste. Healthy toothpaste alternative`},
+  {imgSrc: ToothpastePhoto, link: "https://amzn.to/2Rh0P9m", title: 'Organic Toothpaste Powder', subtitle: `All natural, fluoride-free toothpaste. Healthy toothpaste alternative.`},
   // Copper Tongue Scraper
-  {imgSrc: TongueScraperPhoto, link: "https://amzn.to/37fD9Il", title: 'Copper Tongue Scraper', subtitle: `Our favorite tongue-scraper. Necessary for the early morning breaths.`},
+  {imgSrc: TongueScraperPhoto, link: "https://amzn.to/37fD9Il", title: 'Copper Tongue Scraper', subtitle: `Our favorite tongue-scraper. Necessary for early morning breath.`},
   // African Black Soap
-  {imgSrc: BlackSoapPhoto, link: "https://amzn.to/2TKMPX7", title: 'African Black Soap', subtitle: `Our clear skin secret straight from our ancestors. We use it as a face and body wash`},
+  {imgSrc: BlackSoapPhoto, link: "https://amzn.to/2TKMPX7", title: 'African Black Soap', subtitle: `Our clear skin secret straight from our ancestors. We use it as a face and body wash.`},
   // Organic Shea Butter
-  {imgSrc: SheaButterPhoto, link: "https://amzn.to/2sMwztR", title: 'Organic Shea Butter', subtitle: `We use this to moisturize our skin and hair. For that gold glow you kno`},
+  {imgSrc: SheaButterPhoto, link: "https://amzn.to/2sMwztR", title: 'Organic Shea Butter', subtitle: `We use this to moisturize our skin and hair. For that gold glow, you know.`},
   // Organic Almond Oil
-  {imgSrc: AlmondOilPhoto, link: "https://amzn.to/36bIsHf", title: 'Organic Almond Oil', subtitle: `What we us to keep our hair soft, shiny and luscious`},
+  {imgSrc: AlmondOilPhoto, link: "https://amzn.to/36bIsHf", title: 'Organic Almond Oil', subtitle: `What we use to keep our hair soft, shiny and luscious.`},
   // Cash App
-  {imgSrc: CashAppPhoto, link: "https://cash.app/app/RBGQDBW", title: 'Cash App', subtitle: `How we recieve donations, and invest in Bitcoin and stocks on the road. Plus you get a free custom debit card`},
+  {imgSrc: CashAppPhoto, link: "https://cash.app/app/RBGQDBW", title: 'Cash App', subtitle: `How we recieve donations, and invest in Bitcoin and stocks on the road. Plus you get a free custom debit card.`},
   // Nikon D3500
-  {imgSrc: NikonCameraPhoto, link: "https://amzn.to/38x2Ap4", title: 'Nikon D3500', subtitle: `How we take hi-res photos and shoot photoshoots for ourselves and our clients`},
+  {imgSrc: NikonCameraPhoto, link: "https://amzn.to/38x2Ap4", title: 'Nikon D3500', subtitle: `How we take hi-res photos and shoot photoshoots for ourselves and our clients.`},
 ];
 
 
