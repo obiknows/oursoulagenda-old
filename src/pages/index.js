@@ -140,9 +140,16 @@ const SoulcialMediaIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10vw;
+  width: 12.5vw;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 1000px) {
+    width: 15vw;
+  }
+  @media screen and (max-width: 768px) {
+    width: 22.5vw;
+  }
 `
 
 // const SoulcialMediaIcon = styled.a``
