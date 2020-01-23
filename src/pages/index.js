@@ -7,6 +7,11 @@ import SoulGlobeImg from "../components/soulglobeimg"
 import SoulGlobeText from "../components/soulglobetext"
 import SEO from "../components/seo"
 
+import FacebookLogo from "../images/social/fb-logo.png"
+import InstagramLogo from "../images/social/ig-logo.png"
+import YouTubeLogo from "../images/social/yt-logo.png"
+
+
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const IndexPage = () => (
@@ -57,6 +62,18 @@ const IndexPage = () => (
           <SoulLinkText>Contact</SoulLinkText>
         </Link>
       </SoulLinkSet>
+      {/* SOCIAL ICONS */}
+      <SoulcialMediaIconsContainer>
+        <OutboundLink href="">
+          <img src={FacebookLogo} width="25px" alt=" "/>
+        </OutboundLink>
+        <OutboundLink href="https://www.youtube.com/channel/UC14DDaQZouxfsTxHhXxF0sg">
+          <img src={YouTubeLogo} width="25px" alt=" "/>
+        </OutboundLink>
+        <OutboundLink href="https://instagram.com/oursoulagenda">
+          <img src={InstagramLogo} width="25px" alt=" "/>
+        </OutboundLink>
+      </SoulcialMediaIconsContainer>
     </SoulAgendaHomeContent>
 
     {/* SOULCIAL MEDIA ICONSSET */}
@@ -117,10 +134,18 @@ const SoulLinkSet = styled.div`
 const SoulLinkText = styled.h5`
 `
 
-// const SoulcialMediaIconsContainer = styled.div`
-// `
+const SoulcialMediaIconsContainer = styled.div`
+  // text-align: center;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+`
 
-// const SoulcialMediaIcon = styled.div``
+// const SoulcialMediaIcon = styled.a``
 
 
 export default IndexPage
