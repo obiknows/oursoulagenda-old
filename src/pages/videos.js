@@ -3,7 +3,8 @@ import Helmet from "react-helmet"
 import styled from "styled-components"
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
-import BackHomeButton from "../components/backhomebutton"
+import Header from "../components/header"
+// import BackHomeButton from "../components/backhomebutton"
 import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -51,31 +52,33 @@ const Videos = () => {
   })
 
   return (
-    <Layout>
-      <SEO title="Videos" />
-      <Helmet>
-        <script src={withPrefix("yt-platform.js")} />
-      </Helmet>
-      <div style={{ color: "white" }}>
-        <TitleHeader title="Videos" />
-        <h3>Check some of most recent flicks.</h3>
-        <h3>Oh yeah and don't forget to <span style={{color:'#FEC502'}}>subscribe below</span> if you ain't already</h3>
-        <h3>Thanks SOUL Sqaud</h3>
+    <>
+      <Header />
+      <Layout>
+        <SEO title="Videos" />
+        <Helmet>
+          <script src={withPrefix("yt-platform.js")} />
+        </Helmet>
+        <div style={{ color: "white", marginTop: 40, }}>
+          <TitleHeader title="Videos" />
+          <h3>Check some of most recent flicks.</h3>
+          <h3>Oh yeah and don't forget to <span style={{color:'#FEC502'}}>subscribe below</span> if you ain't already</h3>
+          <h3>Thanks SOUL Sqaud</h3>
 
-        {/* List of 5 most recent videos */}
-        <div>{videosList}</div>
+          {/* List of 5 most recent videos */}
+          <div>{videosList}</div>
 
-        {/* Embedded Youtube Subscribe Button */}
-        <div style={{ padding: `10px`, marginLeft: `auto`, marginRight: `auto`, backgroundColor: "#FEC502", maxWidth: `25vw`, minWidth: `300px`, textAlign: "center", }}>
-          <h4 style={{color: 'black'}}>DONT FORGET TO SUBSCRIBE</h4>
-          <div className="g-ytsubscribe" data-channelid="UC14DDaQZouxfsTxHhXxF0sg" data-layout="full" data-count="default"></div>
+          {/* Embedded Youtube Subscribe Button */}
+          <div style={{ padding: `10px`, marginLeft: `auto`, marginRight: `auto`, backgroundColor: "#FEC502", maxWidth: `25vw`, minWidth: `300px`, textAlign: "center", }}>
+            <h4 style={{color: 'black'}}>DONT FORGET TO SUBSCRIBE</h4>
+            <div className="g-ytsubscribe" data-channelid="UC14DDaQZouxfsTxHhXxF0sg" data-layout="full" data-count="default"></div>
+          </div>
+
+          {/* Go Home Button */}
+          {/* <BackHomeButton/> */}
         </div>
-
-        {/* Go Home Button */}
-        <BackHomeButton/>
-
-      </div>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 

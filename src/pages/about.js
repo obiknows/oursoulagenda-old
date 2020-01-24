@@ -1,14 +1,17 @@
 import React from "react"
 
-import BackHomeButton from "../components/backhomebutton"
+import Header from "../components/header"
+// import BackHomeButton from "../components/backhomebutton"
 import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const About = () => (
+  <>
+  <Header />
   <Layout>
     <SEO title="About Us" />
-    <div style={{color:'white', lineHeight: 1.55}}>
+    <div style={{color:'white', lineHeight: 1.55, marginTop: 40,}}>
       <TitleHeader title="About Us"/>
       <h3>
         We're Aïssatou and Obinna, two creative nomads documenting our journey towards
@@ -35,9 +38,10 @@ const About = () => (
       </h3>
 
       {/* Go Home Button */}
-      <BackHomeButton/>
+      {/* <BackHomeButton/> */}
     </div>
   </Layout>
+  </>
 )
 
 

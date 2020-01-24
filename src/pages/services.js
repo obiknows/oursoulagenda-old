@@ -2,7 +2,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import BackHomeButton from "../components/backhomebutton"
+import Header from "../components/header"
+// import BackHomeButton from "../components/backhomebutton"
 import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -79,24 +80,27 @@ const Services = () => {
   })
 
   return (
-    <Layout>
-      <SEO title="Services" />
-      <div style={{color:'white'}}>
-        <TitleHeader title="Services" />
-        <div style={{textAlign: 'center'}}>
-          <h3>Let us help you take your life & business to the next level.</h3>
-          <h3>Check out our services below.</h3>
+    <>
+      <Header />
+      <Layout>
+        <SEO title="Services" />
+        <div style={{color:'white', marginTop: 40,}}>
+          <TitleHeader title="Services" />
+          <div style={{textAlign: 'center'}}>
+            <h3>Let us help you take your life & business to the next level.</h3>
+            <h3>Check out our services below.</h3>
+          </div>
+          {/* SERVICE TAB LIST */}
+          <>
+            <ServiceListContainer>
+              {ourServicesList}
+            </ServiceListContainer>
+          </>
         </div>
-        {/* SERVICE TAB LIST */}
-        <>
-          <ServiceListContainer>
-            {ourServicesList}
-          </ServiceListContainer>
-        </>
-      </div>
-      {/* Go Home Button */}
-      <BackHomeButton/>
-    </Layout>
+        {/* Go Home Button */}
+        {/* <BackHomeButton/> */}
+      </Layout>
+    </>
   )
 }
 

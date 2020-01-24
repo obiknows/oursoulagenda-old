@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import BackHomeButton from "../components/backhomebutton"
+import Header from "../components/header"
+// import BackHomeButton from "../components/backhomebutton"
 import TitleHeader from "../components/titleheader"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -81,24 +82,27 @@ const OurFaves = () => {
   })
 
   return (
-    <Layout>
-      <SEO title="Our Faves" />
-      <div style={{color:'white'}}>
-        <TitleHeader title="Our Faves" />
-        <h3>Here's a few of our favorite things that we use in van life and in real life.</h3>
+    <>
+      <Header />
+      <Layout>
+        <SEO title="Our Faves" />
+        <div style={{color:'white', marginTop: 40,}}>
+          <TitleHeader title="Our Faves" />
+          <h3>Here's a few of our favorite things that we use in van life and in real life.</h3>
 
-        {/* SERVICE TAB LIST */}
-        <>
-          <FavListContainer>
-            {favItemsList} 
-          </FavListContainer>
-        </>
-        {/* SERVICE TAB LIST  -- END*/}
+          {/* SERVICE TAB LIST */}
+          <>
+            <FavListContainer>
+              {favItemsList} 
+            </FavListContainer>
+          </>
+          {/* SERVICE TAB LIST  -- END*/}
 
-        {/* Go Home Button */}
-        <BackHomeButton/>
-      </div>
-    </Layout>
+          {/* Go Home Button */}
+          {/* <BackHomeButton/> */}
+        </div>
+      </Layout>
+    </>
   )
 }
 

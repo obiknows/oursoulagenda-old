@@ -1,47 +1,105 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
+import React, { useState, useEffect } from "react";
+// import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+// import "./Header.css";
+import { CSSTransition } from "react-transition-group";
+// import soulglobe from '../images/our-soul-agenda-globe.png'
+import soulglobe from '../images/our-soul-agenda-logotype.png'
 
-import soulglobe from '../images/our-soul-agenda-globe.png'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      // marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        // maxWidth: 960,
-        padding: `0.1rem 0.05rem`,
-      }}
-    >
-      <div style={{margin: `0 auto`, textAlign: 'center'}}>
-        <img style={{marginBottom: 0}} src={soulglobe} height="17px" alt="Logo" />
-      </div>
-      <h4 className="signist" style={{ margin: 0, textAlign: 'center', /*lineHeight: `inherit`,*/ lineHeight: `13px`}}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h4>
-    </div>
-  </header>
-)
+export default function Header() {
+  const [isNavVisible, setNavVisibility] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
+
+  const handleMediaQueryChange = mediaQuery => {
+    if (mediaQuery.matches) {
+      setIsSmallScreen(true);
+    } else {
+      setIsSmallScreen(false);
+    }
+  };
+
+  const toggleNav = () => {
+    setNavVisibility(!isNavVisible);
+  };
+
+  return (
+    <header className="Header">
+      <Link to="/" style={{marginTop: 5}}>
+        <img src={soulglobe} className="Logo" alt="" style={{marginBottom: 0}} />
+      </Link>
+      <CSSTransition
+        in={!isSmallScreen || isNavVisible}
+        timeout={350}
+        classNames="NavAnimation"
+        unmountOnExit
+      >
+        <nav className="Nav">
+          <Link to="/services">Services</Link>
+          <Link to="/support-us">Support Us</Link>
+          <Link to="/our-faves">Our Gear</Link>
+          <Link to="/about">About Us</Link>
+        </nav>
+      </CSSTransition>
+      <button onClick={toggleNav} className="Burger">
+        🌍
+        {/* 🍔 */}
+      </button>
+    </header>
+  );
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// const Header = ({ siteTitle }) => (
+  
+//   // <header
+//   //   style={{
+//   //     background: `rebeccapurple`,
+//   //     // marginBottom: `1.45rem`,
+//   //   }}
+//   // >
+//   //   <div
+//   //     style={{
+//   //       margin: `0 auto`,
+//   //       // maxWidth: 960,
+//   //       padding: `0.1rem 0.05rem`,
+//   //     }}
+//   //   >
+//   //     <div style={{margin: `0 auto`, textAlign: 'center'}}>
+//   //       <img style={{marginBottom: 0}} src={soulglobe} height="17px" alt="Logo" />
+//   //     </div>
+//   //     <h4 className="signist" style={{ margin: 0, textAlign: 'center', /*lineHeight: `inherit`,*/ lineHeight: `13px`}}>
+//   //       <Link
+//   //         to="/"
+//   //         style={{
+//   //           color: `white`,
+//   //           textDecoration: `none`,
+//   //         }}
+//   //       >
+//   //         {siteTitle}
+//   //       </Link>
+//   //     </h4>
+//   //   </div>
+//   // </header>
+// )
 
-export default Header
+
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
+
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
+
+// export default Header
