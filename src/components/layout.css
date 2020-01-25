@@ -769,6 +769,10 @@ header > img {
 }
 
 @media (max-width: 700px) {
+  #brand {
+    width: 50vw !important;
+  }
+
   .Header {
     grid-template-areas: "logo burger" "nav nav";
   }
