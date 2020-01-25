@@ -7,6 +7,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 // import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
@@ -36,21 +39,20 @@ const Layout = ({ children}) => {
         <main style={{minHeight: `100vh`}}>{children}</main>
       </div>
       <footer style={{textAlign: 'center', backgroundColor: '#FEC502', paddingTop: `1rem`, paddingBottom: `1rem`,}}>
-        <>
+        <h6>
         © {new Date().getFullYear()}, Built by  
         {` `}
-        <a href="https://instagram.com/itsobinna">Obinna</a> &
+        <OutboundLink href="https://instagram.com/itsobinna">Obinna</OutboundLink> &
         {` `}
-        <a href="https://imewe.xyz">IMEWE Inc.</a>
-        , All Rights Reserved
-        </>
-        <div>
-          <a href="https://imewe.xyz">About</a>
+        Our Soul Agenda, All Rights Reserved
+        </h6>
+        <h6 style={{}}>
+          <Link to="/about">About</Link>
           {` `}
-          <a href="https://imewe.xyz">Terms of Use</a>
+          <Link to="/terms">Terms</Link>
           {` `}
-          <a href="https://imewe.xyz">Privacy</a>
-        </div>
+          <Link to="/privacy">Privacy</Link>
+        </h6>
       </footer>
     </>
   )

@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import { CSSTransition } from "react-transition-group";
 // import soulglobe from '../images/our-soul-agenda-globe.png'
 import soulglobe from '../images/our-soul-agenda-logotype.png'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 
 export default function Header() {
@@ -49,7 +50,7 @@ export default function Header() {
           <Link to="/services">Services</Link>
           <Link to="/support-us">Support Us</Link>
           <Link to="/our-faves">Our Gear</Link>
-          <Link to="/about">About Us</Link>
+          <OutboundLink href="https://oursoulagenda.bigcartel.com">Shop</OutboundLink>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">
