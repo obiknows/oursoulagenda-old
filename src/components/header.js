@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 // import "./Header.css";
 import { CSSTransition } from "react-transition-group";
 // import soulglobe from '../images/our-soul-agenda-globe.png'
+import menuIcon from '../images/menu.png'
 import soulglobe from '../images/our-soul-agenda-logotype.png'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
@@ -37,8 +38,8 @@ export default function Header() {
 
   return (
     <header className="Header">
-      <Link to="/" style={{marginTop: 5}}>
-        <img src={soulglobe} className="Logo" alt="" style={{marginBottom: 0}} />
+      <Link to="/" style={{marginTop: `auto`, marginBottom:`auto`, paddingTop: 5, width:`30vw` }}>
+        <img src={soulglobe} className="Logo" alt="" style={{marginTop:`auto`, marginBottom:`auto`, width: `100%`, height: `auto`, }} />
       </Link>
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
@@ -54,7 +55,7 @@ export default function Header() {
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">
-        🌍
+        <img style={{height:40, marginTop:`auto`, marginBottom:`auto`}}src={menuIcon} alt="" />
         {/* 🍔 */}
       </button>
     </header>

@@ -22,9 +22,9 @@ const SupportUs = () => (
         <TitleHeader title="Support Us" />
         {/* INTRO */}
         <div style={{textAlign: 'center'}}>
-          <h3>Love watchin our journey?</h3>
+          <h3>Love watching our journey?</h3>
           <h3>Learned anything new from our videos?</h3>
-          <h3>Got a lil’ extra on your tax returns and feelin generous?</h3>
+          <h3>Got a lil’ extra on your tax returns and feelin' generous?</h3>
           <h3>We appreciate your support! Help us stay on the road and free up more time to create meaningful content to share with you in one of the ways below:</h3>
         </div>
         {/* DIVIDER */}

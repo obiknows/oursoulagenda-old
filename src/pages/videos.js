@@ -61,8 +61,8 @@ const Videos = () => {
         </Helmet>
         <div style={{ color: "white", marginTop: 40, }}>
           <TitleHeader title="Videos" />
-          <h3>Check some of most recent flicks.</h3>
-          <h3>Oh yeah and don't forget to <span style={{color:'#FEC502'}}>subscribe below</span> if you ain't already</h3>
+          <h3>Check out some of our most recent flicks.</h3>
+          <h3>Oh yeah and don't forget to <span style={{color:'#FEC502'}}>subscribe below</span>.</h3>
           <h3>Thanks SOUL Sqaud</h3>
 
           {/* List of 5 most recent videos */}
